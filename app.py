@@ -46,7 +46,7 @@ def fetch_recipe_google(dish, diet_choice):
             if len(ingredients) >= 3 and len(steps) >= 3:
                 return url, ingredients[:15], steps[:15]
     except Exception as e:
-        st.warning(f⚠️ Error during recipe search: {e}")
+        st.warning(f"Error during recipe search: {e}")
     return None, [], []
 
 # === YouTube Recipe Fallback ===
