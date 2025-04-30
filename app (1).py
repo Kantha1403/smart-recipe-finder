@@ -4,9 +4,6 @@ from bs4 import BeautifulSoup
 
 st.set_page_config(page_title="Smart Recipe Finder", layout="centered")
 
-# --------------------------
-# YouTube-only recipe fetch
-# --------------------------
 def get_youtube_link(dish_name):
     try:
         query = f"{dish_name} recipe site:youtube.com"
@@ -22,9 +19,6 @@ def get_youtube_link(dish_name):
         st.error(f"Error fetching YouTube video: {e}")
         return None
 
-# --------------------------
-# Streamlit UI
-# --------------------------
 st.title("🍳 Smart Recipe Finder")
 
 st.write("Get a YouTube recipe video instantly — no APIs, no CSVs!")
